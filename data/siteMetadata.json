@@ -1,9 +1,9 @@
 {
-  "title": "Next.js Starter Blog",
-  "author": "Tails Azimuth",
-  "headerTitle": "精确博客",
-  "description": "A blog created with Next.js and Tailwind.css",
-  "language": "en-us",
+  "title": "惊鹊",
+  "author": "Tails Azimuth & Wan Mao",
+  "headerTitle": "别枝惊鹊",
+  "description": "物理, 电子, 计算机博客集合",
+  "language": "zh-CN",
   "siteUrl": "https://tailwind-nextjs-starter-blog.vercel.app",
   "siteRepo": "https://github.com/timlrx/tailwind-nextjs-starter-blog",
   "image": "/static/images/avatar.png",
@@ -14,5 +14,5 @@
   "facebook": "https://facebook.com",
   "youtube": "https://youtube.com",
   "linkedin": "https://www.linkedin.com",
-  "locale": "en-US"
+  "locale": "zh-CN"
 }
