@@ -1,0 +1,430 @@
+---
+title: Markdown语法
+date: '2021-07-12'
+tags: ['markdown', 'code', 'features']
+draft: false
+summary: 山东菏泽曹县流批666, 我的包贝尔
+---
+
+[toc]
+
+# 1 基本语法
+
+## 1.1 字体
+
+<!-- 
+### 字体格式
+
+|   名称    |              效果               |                            代码                            |
+| :-------: | :-----------------------------: | :--------------------------------------------------------: |
+|   斜体    |             *斜体*              |                     \*斜体* 或 \_斜体_                     |
+|   粗体    |            **粗体**             |                         \*\*粗体**                         |
+| 斜体+粗体 |        ***斜体 + 粗体***        |                  \*\*\*斜体 + 粗体\*\*\*                   |
+|  删除线   |           ~~删除线~~            |                        \~\~删除线~~                        |
+|  下划线   |          <u>下划线</u>          |                      \<u>下划线\</u>                       |
+|  分割线   |                                 |                            ***                             |
+| 多行代码  |                                 |                            \~~~                            |
+| 单行代码  |           `单行代码`            |                             ``                             |
+|   高亮    |            ==高亮==             |                         \==高亮==                          |
+| 字体颜色  | <font color=red>字体颜色</font> |                               |
+|  背景色   |                                 | \<table>\<tr>\<td bgcolor=Pink>背景色\</td>\</tr>\</table> |
+|           |                                 |                                                            |
+|           |                                 |                                                            |
+|           |                                 |                                                            | -->
+
+<!-- 
+### 字体颜色列表
+
+|                         效果                         |        代码         |
+| :--------------------------------------------------: | :-----------------: |
+|         <font color=red>color=#0099ff</font>         |    color=#0099ff    |
+|           <font color=red>color=red</font>           |      color=red      |
+|        <font color=maroon>color=maroon</font>        |    color=maroon     |
+|          <font color=grey>color=grey</font>          |     color=grey      |
+|        <font color=silver>color=silver</font>        |    color=silver     |
+|     <font color=lightgrey>color=lightgrey</font>     |   color=lightgrey   |
+|       <font color=HotPink>color=HotPink</font>       |    color=HotPink    |
+|      <font color=DeepPink>color=DeepPink</font>      |   color=DeepPink    |
+|     <font color=VioletRed>color=VioletRed</font>     |   color=VioletRed   |
+|        <font color=Purple>color=Purple</font>        |    color=Purple     |
+|          <font color=navy>color=navy</font>          |     color=navy      |
+|          <font color=Blue>color=Blue</font>          |     color=Blue      |
+|          <font color=Cyan>color=Cyan</font>          |     color=Cyan      |
+|   <font color=DeepSkyBlue>color=DeepSkyBlue</font>   |  color=DeepSkyBlue  |
+|  <font color=LightSkyBlue>color=LightSkyBlue</font>  | color=LightSkyBlue  |
+|          <font color=aqua>color=aqua</font>          |     color=aqua      |
+| <font color=DarkTurquoise>color=DarkTurquoise</font> | color=DarkTurquoise |
+| <font color=LightSeaGreen>color=LightSeaGreen</font> | color=LightSeaGreen |
+|         <font color=Green>color=Green</font>         |     color=Green     |
+|   <font color=YellowGreen>color=YellowGreen</font>   |  color=YellowGreen  |
+|     <font color=LawnGreen>color=LawnGreen</font>     |   color=LawnGreen   |
+|   <font color=GreenYellow>color=GreenYellow</font>   |  color=GreenYellow  |
+|        <font color=Yellow>color=Yellow</font>        |    color=Yellow     |
+|        <font color=Tomato>color=Tomato</font>        |    color=Tomato     |
+|       <font color=fuchsia>color=fuchsia</font>       |    color=fuchsia    |
+|  <font color=MediumOrchid>color=MediumOrchid</font>  | color=MediumOrchid  |
+|    <font color=DarkViolet>color=DarkViolet</font>    |  color=DarkViolet   |
+|                                                      |                     | -->
+
+<!-- ### 字体字号
+
+|                          效果                          |                           代码                           |
+| :----------------------------------------------------: | :------------------------------------------------------: |
+| <font color=Blue size=3 face="黑体">蓝色6号黑体</font> | \<font color=Blue size=3 face="黑体">蓝色6号黑体\</font> |
+|             <font face="宋体">宋体</font>              |             \<font face="宋体">宋体\</font>              |
+|         <font face="STCAIYUN">华文彩云</font>          |         \<font face="STCAIYUN">华文彩云\</font>          | -->
+
+## 1.2 布局
+
+### 标题目录
+
+```
+标题与目录：
+# 标题1
+## 标题2
+### 标题3
+#### 标题4
+##### 标题5
+###### 标题6
+[toc] 自动生成目录
+
+无序列表：
+使用 * + - 都可以表示无序列表，还可以使用table键来创建多级列表。
+
+有序列表：
+直接使用数字伙子字母序号
+```
+
+### 表格
+
+```
+Markdown绘制表格：
+|名称|效果|代码|
+
+HTML绘制表格：
+<table><tbody>
+    <tr>
+        <th rowspan="3">三行</th>
+        <th><font color="Hotpink">列</font></th>
+    </tr>
+    <tr>
+        <td bgcolor="Hotpink">单元格</td>
+    </tr>
+    <tr>
+        <td>单元格</td>
+    </tr>
+</table>
+```
+
+### 列表
+
+|   名称   |    代码     |
+| :------: | :---------: |
+| 无序列表 |   \* 内容   |
+|          |   - 内容    |
+|          |   + 内容    |
+| 任务列表 | - [ ] Study |
+
+## 1.3 链接
+
+### 超链接
+
+|         效果          |          代码          |
+| :-------------------: | :--------------------: |
+| [百度](www.baidu.com) | \[百度](www.baidu.com) |
+| <http://example.com/> | \<http://example.com/> |
+
+### 锚点
+
+|      名称      |             效果              |              代码              |
+| :------------: | :---------------------------: | :----------------------------: |
+|    目标位置    | <a name="des"> 目标位置  </a> | \<a name="des"> 目标位置 \</a> |
+| 跳转到目标位置 |     [跳转指定位置](#des)      |     \[跳转指定位置](#des)      |
+
+### 引用
+
+| 名称 |   代码   |
+| :--: | :------: |
+| 引用 | > quote  |
+|      | > >quote |
+
+### 图片
+
+```
+![图片描述](url)
+```
+
+### 脚注
+
+```
+[^1]
+[^2]
+```
+
+## 1.4 特殊符号
+
+### 箭头
+
+|         效果          |        代码         |
+| :-------------------: | :-----------------: |
+|      $\uparrow$       |      \uparrow       |
+|     $\downarrow$      |     \downarrow      |
+|    $\updownarrow$     |    \updownarrow     |
+|      $\Uparrow$       |      \Uparrow       |
+|     $\Downarrow$      |     \Downarrow      |
+|    $\Updownarrow$     |    \Updownarrow     |
+|     $\rightarrow$     |     \rightarrow     |
+|     $\leftarrow$      |     \leftarrow      |
+|   $\leftrightarrow$   |   \leftrightarrow   |
+|     $\Rightarrow$     |     \Rightarrow     |
+|     $\Leftarrow$      |     \Leftarrow      |
+|   $\Leftrightarrow$   |   \Leftrightarrow   |
+|   $\longrightarrow$   |   \longrightarrow   |
+|   $\longleftarrow$    |   \longleftarrow    |
+| $\longleftrightarrow$ | \longleftrightarrow |
+|   $\Longrightarrow$   |   \Longrightarrow   |
+|   $\Longleftarrow$    |   \Longleftarrow    |
+| $\Longleftrightarrow$ | \Longleftrightarrow |
+|   $\rightharpoonup$   |   \rightharpoonup   |
+|  $\leftharpoondown$   |  \leftharpoondown   |
+| $\rightleftharpoons$  | \rightleftharpoons  |
+|   $\leftharpoonup$    |   \leftharpoonup    |
+|  $\rightharpoondown$  |  \rightharpoondown  |
+|      $\nearrow$       |      \nearrow       |
+|      $\searrow$       |      \searrow       |
+|      $\swarrow$       |      \swarrow       |
+|      $\nwarrow$       |      \nwarrow       |
+|                       |                     |
+|                       |                     |
+
+### 表情
+
+```
+:happy:  高兴
+:weary:  悲伤
+:cry:  哭
+```
+
+# 2 数学公式
+
+## 2.1 运算符号
+
+### 希腊字母
+
+| 效果（大写） |   代码   | 效果（小写）  |    代码     |
+| :----------: | :------: | :-----------: | :---------: |
+|   $\Alpha$   |  \Alpha  |   $\alpha$    |   \alpha    |
+|   $\Beta$    |  \Beta   |    $\beta$    |    \beta    |
+|   $\Gamma$   |  \Gamma  |   $\gamma$    |   \gamma    |
+|   $\Delta$   |  \Delta  |   $\delta$    |   \delta    |
+|  $\Epsilon$  | \Epsilon |  $\epsilon$   |  \epsilon   |
+|              |          | $\varepsilon$ | \varepsilon |
+|   $\Zeta$    |  \Zeta   |    $\zeta$    |    \zeta    |
+|    $\Eta$    |   \Eta   |    $\eta$     |    \eta     |
+|   $\Theta$   |  \Theta  |   $\theta$    |   \theta    |
+|   $\Iota$    |  \Iota   |    $\iota$    |    \iota    |
+|   $\Kappa$   |  \Kappa  |   $\kappa$    |   \kappa    |
+|  $\Lambda$   | \Lambda  |   $\lambda$   |   \lambda   |
+|    $\Mu$     |   \Mu    |     $\mu$     |     \mu     |
+|    $\Nu$     |   \Nu    |     $\nu$     |     \nu     |
+|    $\Xi$     |   \Xi    |     $\xi$     |     \xi     |
+|  $\Omicron$  | \Omicron |  $\omicron$   |  \omicron   |
+|    $\Pi$     |   \Pi    |     $\pi$     |     \pi     |
+|    $\Rho$    |   \Rho   |    $\rho$     |    \rho     |
+|   $\Sigma$   |  \Sigma  |   $\sigma$    |   \sigma    |
+|    $\Tau$    |   \Tau   |    $\tau$     |    \tau     |
+|  $\Upsilon$  | \Upsilon |  $\upsilon$   |  \upsilon   |
+|    $\Phi$    |   \Phi   |    $\phi$     |    \phi     |
+|              |          |   $\varphi$   |   \varphi   |
+|    $\Chi$    |   \Chi   |    $\chi$     |    \chi     |
+|    $\Psi$    |   \Psi   |    $\psi$     |    \psi     |
+|   $\Omega$   |  \Omega  |   $\omega$    |   \omega    |
+
+### 其他符号
+
+|  效果   | 代码  |
+| :-----: | :---: |
+| $\hbar$ | \hbar |
+
+### 结构
+
+|      名称      |       效果       |      代码      |
+| :------------: | :--------------: | :------------: | --------------------- | ------------------- |
+|      上标      |  $A^a, A^{abc}$  |  A^a, A^{abc}  |
+|      下标      |  $A_a, A_{abc}$  |  A*a, A*{abc}  |
+|      向量      |    $\vec{a}$     |    \vec{a}     |
+|       点       |    $\dot{a}$     |    \dot{a}     |
+|                |    $\ddot{a}$    |    \ddot{a}    |
+|                |    $\hat{a}$     |    \hat{a}     |
+| 共轭（单符号） |    $\bar{A}$     |    \bar{A}     |
+| 共轭（多符号） | $\overline{A+B}$ | \overline{A+B} |
+|      序号      |   $A=B\tag{1}$   |   A=B\tag{1}   |
+|      缩进      |     &emsp;A      |    \&emsp;A    |
+|      间距      |      $a\!b$      |     a\\!b      |
+|                |      $a\,b       |      a\:b      | a\;b$                 | a\\,b\|a\\:b\|a\\;b |
+|                |    $a\quad b     |   a\qquad b$   | a\\quad b\|a\\qquad b |
+
+### 括号
+
+|        效果        |               代码               |
+| :----------------: | :------------------------------: |
+|       $(A)$        |               (A)                |
+|       $[A]$        |               [A]                |
+| $\langle A\rangle$ | \lang A\rang 或 \langle A\rangle |
+|  $\lvert A\rvert$  |          \lvert A\rvert          |
+|  $\lVert A\rVert$  |          \lVert A\rVert          |
+|      $\{A\}$       |   \lbrace A\rbrace 或 \\{A\\}    |
+|   $\big(A\big)$    |          \big( A \big)           |
+|  $\Big( A \Big)$   |          \Big( A \Big)           |
+| $\bigg( A \bigg)$  |         \bigg( A \bigg)          |
+| $\Bigg( A \Bigg)$  |         \Bigg( A \Bigg)          |
+
+### 运算关系
+
+|   名称   |    效果     |   代码    |
+| :------: | :---------: | :-------: |
+|    乘    |  $\times$   |  \times   |
+|    除    |   $\div$    |   \div    |
+|   加减   |    $\pm$    |    \pm    |
+|   减加   |    $\mp$    |    \mp    |
+| 小于等于 |   $\leq$    |   \leq    |
+| 大于等于 |   $\geq$    |   \geq    |
+|  全等于  |  $\equiv$   |  \equiv   |
+|  远小于  |    $\ll$    |    \ll    |
+|  远大于  |    $\gg$    |    \gg    |
+|  约等于  |  $\approx$  |  \approx  |
+|   全等   |   $\cong$   |   \cong   |
+|   相似   |   $\sim$    |   \sim    |
+|  正比于  |  $\propto$  |  \propto  |
+|   平行   | $\parallel$ | \parallel |
+|   垂直   |   $\bot$    |   \bot    |
+|   星号   |   $\ast$    |   \ast    |
+|   竖线   |   $\mid$    |   \mid    |
+|    点    |   $\cdot$   |   \cdot   |
+|   异或   | $\bigoplus$ | \bigoplus |
+|   同或   | $\bigodot$  | \bigodot  |
+
+## 2.2 运算公式
+
+### 基本算式
+
+|   名称   |                          效果                           |                          代码                          |
+| :------: | :-----------------------------------------------------: | :----------------------------------------------------: |
+|   分式   |                      $\frac{a}{b}$                      |                      \frac{a}{b}                       |
+|   方根   |                     $\sqrt{a + b}$                      |                      \sqrt{a + b}                      |
+|          |                    $\sqrt[n]{a + b}$                    |                    \sqrt[n]{a + b}                     |
+|   累加   |                 $\sum_{i = 0}^{n}a[i]$                  |                  \sum\_{i=0}^{n}a[i]                   |
+|          |               $\sum\limits_{i=0}^{n}a[i]$               |               \sum\limits\_{i=0}^{n}a[i]               |
+|   累乘   |                  $\prod_{i=0}^{n}a[i]$                  |                  \prod\_{i=0}^{n}a[i]                  |
+|          |              $\prod\limits_{i=0}^{n}a[i]$               |              \prod\limits\_{i=0}^{n}a[i]               |
+|   分支   | $y=\begin{cases}0,\quad x\leq0\\1,\quad x>0\end{cases}$ | y=\begin{cases}0,\quad x\leq0\\\1,\quad x>0\end{cases} |
+| 公式对齐 |     $\begin{aligned}a&=b^2 + c^2\\&=n\end{aligned}$     |    \begin{aligned}a&=b^2 + c^2\\\\&=n\end{aligned}     |
+|  上下标  |            $\overset{x}{A}=\underset{y}{B}$             |             \overset{x}{A}=\underset{y}{B}             |
+
+### 集合
+
+|   名称   |      效果      |     代码     |
+| :------: | :------------: | :----------: |
+|   空集   |  $\emptyset$   |  \emptyset   |
+|   属于   |     $\in$      |     \in      |
+|          |     $\ni$      |     \ni      |
+|  不属于  |    $\notin$    |    \notin    |
+|  包含于  |   $\subset$    |   \subset    |
+|          |   $\supset$    |   \supset    |
+|          |  $\subseteq$   |  \subseteq   |
+|          |  $\supseteq$   |  \supseteq   |
+| 不包含于 | $ \nsubseteq$  |  \nsubseteq  |
+|   子集   | $ \subseteqq$  |  \subseteqq  |
+|          | $ \supseteqq$  |  \supseteqq  |
+|  真子集  | $\subsetneqq$  | \subsetneqq  |
+|          | $\supsetneqq$  | \supsetneqq  |
+|    交    |     $\cap$     |     \cap     |
+|          |   $\bigcap$    |   \bigcap    |
+|    并    |     $\cup$     |     \cup     |
+|          |   $\bigcup$    |   \bigcup    |
+|  实数集  | $\mathbb{R} $  |  \mathbb{R}  |
+|  复数集  |  $\mathbb{C}$  |  \mathbb{C}  |
+|  整数集  |  $\mathbb{Z}$  |  \mathbb{Z}  |
+| 自然数集 |  $\mathbb{N}$  |  \mathbb{N}  |
+| 正整数集 | $\mathbb{N^+}$ | \mathbb{N^+} |
+|  质数集  |  $\mathbb{P}$  |  \mathbb{P}  |
+| 有理数集 |  $\mathbb{Q}$  |  \mathbb{Q}  |
+| 无理数集 |  $\mathbb{I}$  |  \mathbb{I}  |
+
+### 逻辑运算
+
+|  名称  |     效果     |    代码    |
+| :----: | :----------: | :--------: |
+|  因为  |  $\because$  |  \because  |
+|  所以  | $\therefore$ | \therefore |
+|  任意  |  $\forall$   |  \forall   |
+|  存在  |   $\exist$   |   \exist   |
+| 逻辑与 |    $\vee$    |    \vee    |
+|        |  $\bigvee$   |  \bigvee   |
+| 逻辑或 |   $\wedge$   |   \wedge   |
+|        | $\bigwedge$  | \bigwedge  |
+|        |              |            |
+
+### 三角函数
+
+|    效果    |   代码   |
+| :--------: | :------: |
+|   $\sin$   |   \sin   |
+|   $\cos$   |   \cos   |
+|   $\tan$   |   \tan   |
+|   $\cot$   |   \cot   |
+|   $\sec$   |   \sec   |
+|   $\csc$   |   \csc   |
+|  $\angle$  |  \angle  |
+| $30^\circ$ | 30^\circ |
+|            |          |
+
+### 对数函数
+
+|     效果      |     代码     |
+| :-----------: | :----------: |
+| $\log_{a}{b}$ | \log\_{a}{b} |
+| $\ln{a + b}$  |  \ln{a + b}  |
+| $\lg{a + b}$  |  \lg{a + b}  |
+
+### 极限
+
+|                 效果                 |                代码                 |
+| :----------------------------------: | :---------------------------------: |
+|                $\lim$                |                \lim                 |
+|            $\rightarrow$             |             \rightarrow             |
+|               $\infty$               |               \infty                |
+| $\lim\limits_{n\rightarrow+\infty}n$ | \lim\limits\_{n\rightarrow+\infty}n |
+
+### 微积分
+
+|   名称   |                   效果                   |                  代码                  |
+| :------: | :--------------------------------------: | :------------------------------------: | -------------------------------------------- |
+|   导数   |                 $\prime$                 |                 \prime                 |
+|  导数式  |   $\left.\frac{\rm{d}y}{\rm{d}x}\right   |                \_{x=0}$                | \left.\frac{\rm{d}y}{\rm{d}x}\right\|\_{x=0} |
+| 一阶偏导 |    $\frac{\partial{y}}{\partial{x}}$     |    \frac{\partial{y}}{\partial{x}}     |
+| 二阶偏导 | $\frac{\partial^{2}{y}}{\partial {x}^2}$ | \frac{\partial^{2}{y}}{\partial {x}^2} |
+|   积分   |                  $\int$                  |                  \int                  |
+| 二重积分 |                 $\iint$                  |                 \iint                  |
+| 三重积分 |                 $\iiint$                 |                 \iiint                 |
+| 曲线积分 |                 $\oint$                  |                 \oint                  |
+|   梯度   |                 $\nabla$                 |                 \nabla                 |
+|  积分式  |              $\int_0^1xdx$               |              \int_0^1xdx               |
+|          |                                          |                                        |
+|          |                                          |                                        |
+
+### 线性代数
+
+|   名称   |                                           效果                                           |                                           代码                                           |
+| :------: | :--------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------: | --------------------------------------------------------- |
+|   矩阵   |                           $\begin{matrix}1&1\\2&2\end{matrix}$                           |                           \begin{matrix}1&1\\\2&2\end{matrix}                            |
+|          |                    $\left[\begin{matrix}1&1\\2&2\end{matrix}\right]$                     |                     \left[\begin{matrix}1&1\\\2&2\end{matrix}\right]                     |
+|          |              $\left\lbrace\begin{matrix}1&1\\2&2\end{matrix}\right\rbrace$               |               \left\lbrace\begin{matrix}1&1\\\2&2\end{matrix}\right\rbrace               |
+|          |                          $\begin{Bmatrix}1&1\\2&2\end{Bmatrix}$                          |                          \begin{Bmatrix}1&1\\\2&2\end{Bmatrix}                           |
+|          | $\left[\begin{matrix}1&\cdots&1\\\ \vdots&\ddots&\vdots \\2&\cdots&2\end{matrix}\right]$ | \left[\begin{matrix}1&\cdots&1\\\\ \vdots&\ddots&\vdots \\\2&\cdots&2\end{matrix}\right] |
+| 增广矩阵 |                                 $\left[\begin{array}{cc                                  |                            c}1&1&x\\2&2&y\end{array}\right]$                             | \left[\begin{array}{cc\|c}1&1&x\\\2&2&y\end{array}\right] |
+|  省略号  |                                         $\dots$                                          |                                          \dots                                           |
+|          |                                         $\cdots$                                         |                                          \cdots                                          |
+|          |                                         $\vdots$                                         |                                          \vdots                                          |
+|          |                                         $\ddots$                                         |                                          \ddots                                          |
+|          |                                                                                          |                                                                                          |

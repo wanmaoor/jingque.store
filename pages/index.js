@@ -78,7 +78,7 @@ export default function Home({ posts }) {
                             className="text-blue-500 hover:text-blue-600 dark:hover:text-blue-400"
                             aria-label={`Read "${title}"`}
                           >
-                            阅读全部 &rarr;
+                            阅读全文 &rarr;
                           </Link>
                         </div>
                       </div>
