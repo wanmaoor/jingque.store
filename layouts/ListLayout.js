@@ -55,14 +55,6 @@ export default function ListLayout({ posts, title, initialDisplayPosts = [], pag
             return (
               <li key={slug} className="py-4">
                 <article className="space-y-2 xl:grid xl:grid-cols-4 xl:space-y-0 xl:items-baseline">
-                  <dl>
-                    <dt className="sr-only">Published on</dt>
-                    <dd className="text-base font-medium leading-6 text-gray-500 dark:text-gray-400">
-                      <time dateTime={date}>
-                        {new Date(date).toLocaleDateString(siteMetadata.locale, postDateTemplate)}
-                      </time>
-                    </dd>
-                  </dl>
                   <div className="space-y-3 xl:col-span-3">
                     <div>
                       <h3 className="text-2xl font-bold leading-8 tracking-tight">
@@ -70,6 +62,17 @@ export default function ListLayout({ posts, title, initialDisplayPosts = [], pag
                           {title}
                         </Link>
                       </h3>
+                      <dl>
+                        <dt className="sr-only">Published on</dt>
+                        <dd className="text-base font-medium leading-6 text-gray-500 dark:text-gray-400">
+                          <time dateTime={date}>
+                            {new Date(date).toLocaleDateString(
+                              siteMetadata.locale,
+                              postDateTemplate
+                            )}
+                          </time>
+                        </dd>
+                      </dl>
                       <div className="flex flex-wrap">
                         {tags.map((tag) => (
                           <Tag key={tag} text={tag} />
